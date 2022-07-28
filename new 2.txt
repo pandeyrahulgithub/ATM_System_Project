@@ -1,0 +1,31 @@
+public class Hello 
+{
+
+	public static void main(String... g)
+	{
+		String str="12321";
+						
+		str = str.toLowerCase();
+		
+		StringBuffer sb = new StringBuffer(str);
+		sb = sb.reverse();
+		
+		String str1 = new String(sb);
+		
+		if(str.equals(str1))		
+			System.out.println("YES");		
+		else
+			System.out.println("NO");	
+		
+		
+		
+		
+		for(int i=str.length()-1;i>=0;i--)
+		{
+			char ch = str.charAt(i);
+			System.out.print(ch);
+			
+		}
+		
+	}	
+}
